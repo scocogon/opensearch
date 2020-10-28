@@ -6,7 +6,7 @@
 ### 安装
 
 ```
-go get -u git.qutoutiao.net/x/qopensearch
+go get -u github.com/scocogon/opensearch
 ```
 
 ### 示例
@@ -16,7 +16,7 @@ const (
 	accessKeyID     = ""
 	accessKeySecret = ""
 	host            = "http://intranet.opensearch-cn-qingdao.aliyuncs.com"
-	appName         = "qa_qtt_content"
+	appName         = ""
 )
 
 func main() {
@@ -44,7 +44,6 @@ func main() {
     // 添加 query 子句
     // query=query=..&&filter=..&&sort=..&config=..
     cli.AddQuerys(query, filter, srt, cfg).
-
         // 添加 fetch_fields
         // id;source;source_type;comment_pv;bitrate
         AddFetchFields("id;source").

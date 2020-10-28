@@ -1,0 +1,20 @@
+*.log
+
+.DS_Store
+
+coverage.txt
+
+.idea/
+# for vs code
+.vscode/
+
+# for sublime
+.sftp-config*.json
+
+# for vim
+.*.sw?
+
+vendor/
+
+*.orig
+*.tmp
